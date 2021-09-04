@@ -1,0 +1,246 @@
+@import 'variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.transition{
+    transition: all 0.3s ease-in-out;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $PaleBlue;
+
+    position: relative;
+
+    .container{
+        max-width: 90%;
+        width: 400px;
+        height: 700px;
+        margin: auto;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img{
+            width: 100%;
+            border-radius: 30px 30px 0 0;
+            margin-bottom: 30px;
+        }
+
+        .title{
+            h1{
+                font-size: 2rem;
+                font-weight: 700;
+                color: $DarkBlue;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 1rem;
+                color: $DesaturatedBlue;
+                font-weight: 500;
+                margin-bottom: 20px;
+                line-height: 1.5rem;
+            }
+        }
+
+        .plan{
+            width: 85%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $VeryPaleBlue;
+            position: relative;
+
+            padding: 20px 15px;
+            margin-bottom: 40px;
+            .logo{
+                margin-right: 25px;
+            }
+            img{
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            p{
+                font-weight: 700;
+                color: $DarkBlue;
+                font-size: 1rem;
+                span{
+                    color: $DesaturatedBlue;
+                }
+            }
+
+            a{
+                font-weight: 700;
+                font-size: 1rem;
+                color: $BrightBlue;
+                &:hover{
+                    color: $hover;
+                    text-decoration: none;
+                }
+            }
+        }
+        .payment{
+            display: flex;
+            flex-direction: column;
+
+            button{
+                display: block;
+                width: 330px;
+                padding: 15px 0;
+                border-radius: 10px;
+                border: none;
+                background-color: $BrightBlue;
+                cursor: pointer;
+                box-shadow: 0 2px 30px 0 rgba($BrightBlue, 0.4);
+
+                font-size: 1rem;
+                font-weight: 700;
+                color: $PaleBlue;
+
+                margin-bottom: 50px;
+
+                &:hover{
+                    background-color: $hover;
+                    box-shadow: 0 2px 30px 0 rgba($hover, 0.4);
+                }
+            }
+
+            a{
+                font-size: 1rem;
+                font-weight: 700;
+                color: $DesaturatedBlue;
+                text-decoration: none;
+                &:hover{
+                    color: $DarkBlue;
+                }
+            }
+        }
+       
+    }
+    .attribution{
+        font-size: 0.625rem;
+        position: absolute;
+        top: 93%;
+        left:50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width: 768px)  {
+    main{
+        background-image: url(../images/pattern-background-desktop.svg);
+
+        .container{
+            width: 350px;
+            height: 600px;
+
+            .title{
+                h1{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+
+            .plan{
+                width: 85%;
+                height: 80px;
+    
+                padding: 20px 15px;
+                margin-bottom: 40px;
+                .logo{
+                    margin-right: 15px;
+                }
+                img{
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                p{
+                    font-weight: 700;
+                    color: $DarkBlue;
+                    font-size: 0.875rem;
+                    span{
+                        color: $DesaturatedBlue;
+                    }
+                }
+    
+                a{
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    color: $BrightBlue;
+                    &:hover{
+                        color: $hover;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .payment{
+                button{
+                    display: block;
+                    width: 300px;
+                    padding: 15px 0;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: $BrightBlue;
+                    cursor: pointer;
+                    box-shadow: 0 2px 30px 0 rgba($BrightBlue, 0.4);
+    
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    color: $PaleBlue;
+    
+                    margin-bottom: 30px;
+    
+                    &:hover{
+                        background-color: $hover;
+                        box-shadow: 0 2px 30px 0 rgba($hover, 0.4);
+                    }
+                }
+    
+                a{
+                    font-size: 0.875rem;
+                    font-weight: 700;
+                    color: $DesaturatedBlue;
+                    text-decoration: none;
+                    &:hover{
+                        color: $DarkBlue;
+                    }
+                }
+            }
+        }
+        .attribution{
+            font-size: 1rem;
+            position: absolute;
+            top: 87%;
+            left:50%;
+            transform: translateX(-50%);
+        }
+    
+    }
+}

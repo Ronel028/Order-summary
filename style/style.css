@@ -1,0 +1,262 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+  position: relative;
+}
+
+main .container {
+  max-width: 90%;
+  width: 400px;
+  height: 700px;
+  margin: auto;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .container img {
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  margin-bottom: 30px;
+}
+
+main .container .title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2f56;
+  margin-bottom: 20px;
+}
+
+main .container .title p {
+  font-size: 1rem;
+  color: #7280a7;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+}
+
+main .container .plan {
+  width: 85%;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  position: relative;
+  padding: 20px 15px;
+  margin-bottom: 40px;
+}
+
+main .container .plan .logo {
+  margin-right: 25px;
+}
+
+main .container .plan img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .container .plan p {
+  font-weight: 700;
+  color: #1f2f56;
+  font-size: 1rem;
+}
+
+main .container .plan p span {
+  color: #7280a7;
+}
+
+main .container .plan a {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3829e0;
+}
+
+main .container .plan a:hover {
+  color: #6f62f3;
+  text-decoration: none;
+}
+
+main .container .payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container .payment button {
+  display: block;
+  width: 330px;
+  padding: 15px 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #3829e0;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 30px 0 rgba(56, 41, 224, 0.4);
+          box-shadow: 0 2px 30px 0 rgba(56, 41, 224, 0.4);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e0e8ff;
+  margin-bottom: 50px;
+}
+
+main .container .payment button:hover {
+  background-color: #6f62f3;
+  -webkit-box-shadow: 0 2px 30px 0 rgba(111, 98, 243, 0.4);
+          box-shadow: 0 2px 30px 0 rgba(111, 98, 243, 0.4);
+}
+
+main .container .payment a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #7280a7;
+  text-decoration: none;
+}
+
+main .container .payment a:hover {
+  color: #1f2f56;
+}
+
+main .attribution {
+  font-size: 0.625rem;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+  main .container {
+    width: 350px;
+    height: 600px;
+  }
+  main .container .title h1 {
+    font-size: 1.5rem;
+  }
+  main .container .title p {
+    font-size: 0.75rem;
+  }
+  main .container .plan {
+    width: 85%;
+    height: 80px;
+    padding: 20px 15px;
+    margin-bottom: 40px;
+  }
+  main .container .plan .logo {
+    margin-right: 15px;
+  }
+  main .container .plan img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  main .container .plan p {
+    font-weight: 700;
+    color: #1f2f56;
+    font-size: 0.875rem;
+  }
+  main .container .plan p span {
+    color: #7280a7;
+  }
+  main .container .plan a {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #3829e0;
+  }
+  main .container .plan a:hover {
+    color: #6f62f3;
+    text-decoration: none;
+  }
+  main .container .payment button {
+    display: block;
+    width: 300px;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #3829e0;
+    cursor: pointer;
+    -webkit-box-shadow: 0 2px 30px 0 rgba(56, 41, 224, 0.4);
+            box-shadow: 0 2px 30px 0 rgba(56, 41, 224, 0.4);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #e0e8ff;
+    margin-bottom: 30px;
+  }
+  main .container .payment button:hover {
+    background-color: #6f62f3;
+    -webkit-box-shadow: 0 2px 30px 0 rgba(111, 98, 243, 0.4);
+            box-shadow: 0 2px 30px 0 rgba(111, 98, 243, 0.4);
+  }
+  main .container .payment a {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #7280a7;
+    text-decoration: none;
+  }
+  main .container .payment a:hover {
+    color: #1f2f56;
+  }
+  main .attribution {
+    font-size: 1rem;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
